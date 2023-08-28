@@ -7,9 +7,27 @@ Demonstration to:
 
 required npm package: googleapis
 */
+
 const { google } = require('googleapis');
 const path = require('path');
 const fs = require('fs');
+
+/*
+If want to use service account instead of access token then replace the below till next comment by:
+
+const KEYFILEPATH = path.join(`${__dirname}/../service-account.json`);
+const SCOPES = ['https://www.googleapis.com/auth/drive'];
+
+const auth = new google.auth.GoogleAuth({
+  keyFile: KEYFILEPATH,
+  scopes: SCOPES,
+});
+
+const drive = google.drive({
+  version: 'v3',
+  auth,
+});
+*/
 
 const CLIENT_ID = 'YOUR CLIENT ID';
 const CLIENT_SECRET = 'YOUR CLIENT SECRET';
@@ -35,6 +53,7 @@ filepath which needs to be uploaded
 Note: Assumes example.jpg file is in root directory, 
 though this can be any filePath
 */
+
 const filePath = path.join(__dirname, 'example.jpg');
 
 async function uploadFile() {
