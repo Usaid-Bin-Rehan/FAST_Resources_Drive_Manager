@@ -1,3 +1,7 @@
 # FAST_Resources_Drive_Manager
 
+THIS REPOSITORY IS ARCHIVED DUE TO UNFEASIBILITY OF USING GOOGLE DRIVE
+
+IT HAS BEEN REPLACED BY FEASIBLE ALTERNATIVE APPROACHES TO GOOGLE DRIVE
+
 Reference: https://github.com/googleapis/google-api-nodejs-client#readme
